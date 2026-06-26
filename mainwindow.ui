@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main - POF Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QTabWidget::pane {
+        border: 1px solid #ccc;
+        background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #1e3c72, stop:1 #2a5298);
+    }
+    QTabBar::tab {
+        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f1f1f1, stop:1 #ddd);
+        border: 1px solid #ccc;
+        padding: 5px;
+        min-width: 100px;
+    }
+    QTabBar::tab:selected {
+        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc, stop:1 #bbb);
+    }
+    QLabel {
+        color: white;
+        qproperty-alignment: AlignCenter;
+    }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="employeeTab">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>580</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <attribute name="title">
+        <string>Employee</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="employeeLabel">
+          <property name="text">
+           <string>Employee details here...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="inventoryTab">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>580</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <attribute name="title">
+        <string>Inventory</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="inventoryLabel">
+          <property name="text">
+           <string>Inventory details here...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="productionTab">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>580</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <attribute name="title">
+        <string>Production</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="productionLabel">
+          <property name="text">
+           <string>Production details here...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="maintenanceTab">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>580</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <attribute name="title">
+        <string>Maintenance</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="maintenanceLabel">
+          <property name="text">
+           <string>Maintenance details here...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

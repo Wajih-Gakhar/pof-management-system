@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QMainWindow" name="LoginWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login - POF Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+        background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #1e3c72, stop:1 #2a5298);
+        border-radius: 10px;
+    }
+    QLabel {
+        color: white;
+        font-size: 18px;
+        qproperty-alignment: AlignCenter;
+    }
+    QLineEdit {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: white;
+        min-width: 200px;
+    }
+    QPushButton {
+        background-color: #2a5298;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        border: none;
+    }
+    QPushButton:hover {
+        background-color: #1e3c72;
+    }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="usernameEdit">
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="passwordEdit">
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Password</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="loginButton">
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
